@@ -14,7 +14,7 @@ The most important characteristic of ECG signal that cardiologists employ in the
 5. The training and test accuracy of each method is reported.
 6. Sliding windows of sizes 5 and 21 are used, and steps 3 to 5 are repeated.
 
-# Steps which have been done for LSTM:
+# Steps for LSTM:
 1. First, each file (with 15000 or 2500 samples) has been divided into records with 500 samples. ( the samples should not be shuffled!)
 2. Then, there are 100 sample records with annotation. A sliding window of size 5 has been used in order to get training patterns for each record.
 3. After the training patterns is prepared, a bidirectional LSTM network has been built for classification and training. (Training sequences of each record forward and backward have been presented to two separate LSTM layers, both of which are connected to the same output layer)

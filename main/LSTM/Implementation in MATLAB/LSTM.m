@@ -16,7 +16,7 @@ file = struct('name',path);
 % Train Annotation 
 for i=1:1:60
 nam=filename(1,i);
-addr=strcat('G:\Arshad\TERM2\Deep\Prj#4\dataset\',nam);
+addr=strcat('dataset\',nam);
 anno_in=readmatrix(char(addr));
 anno=((anno_in(:,1))+1)';
 
@@ -29,7 +29,7 @@ end
 for i=61:1:72
     j=i-60;
 nam=filename(1,i);
-addr=strcat('G:\Arshad\TERM2\Deep\Prj#4\dataset\',nam);
+addr=strcat('dataset\',nam);
 anno_in=readmatrix(char(addr));
 anno=((anno_in(:,1))+1)';
 
@@ -42,7 +42,7 @@ end
 for i=73:1:132
     j=i-72;
 nam=filename(1,i);
-addr=strcat('G:\Arshad\TERM2\Deep\Prj#4\dataset\',nam);
+addr=strcat('dataset\',nam);
 samp_in=readmatrix(char(addr));
 samp=(samp_in(:,2))';
 
@@ -54,7 +54,7 @@ end
 for i=133:1:144
     j=i-132;
 nam=filename(1,i);
-addr=strcat('G:\Arshad\TERM2\Deep\Prj#4\dataset\',nam);
+addr=strcat('dataset\',nam);
 samp_in=readmatrix(char(addr));
 samp=(samp_in(:,2))';
 
